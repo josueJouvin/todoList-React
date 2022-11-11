@@ -1,14 +1,16 @@
 import Header from "./components/Header"
 import Formulario from "./components/Formulario"
+import Nota from "./components/Nota"
 function App() {
 
   return (
     <div>
       <Header/>
 
-      <div className="container mx-auto mt-10 mb-5">
+      <div >
           <Formulario/>
       </div>
+      
     </div>    
   )
 }
