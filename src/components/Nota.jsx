@@ -22,8 +22,8 @@ const Nota = ({notas,setNotas,setEdicion,setTitulo,setMensaje,setId,setHeight,he
       {notas.map( notita =>(
         <div key={notita.id} className="border-2 border-yellow-400 border-solid rounded p-4 w-11/12 md:w-80 lg:w-80">
           <h3 className='text-xl font-bold pb-2 break-words'>{notita.titulo}</h3>
-          <textarea
-          readOnly="readonly" className={`overflow-hidden w-full h-fit outline-none break-words text-lg font-medium`}>{notita.mensaje}</textarea>
+          <p
+          readOnly="readonly" className={`overflow-hidden w-full h-fit outline-none break-words text-lg font-medium`}>{notita.mensaje}</p>
         
           <div className="flex justify-between mt-2">
               <button onClick={() => editar(notita)} className='text-yellow-500 hover:text-yellow-700 text-lg font-semibold'>Editar</button>
